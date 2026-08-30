@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>PronosFoot — Prédictions de matchs</title>
+<meta name="theme-color" content="#0B1F17">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">⚽</span>
+      <h1>Pronos<span>Foot</span></h1>
+    </div>
+    <p class="tagline">Probabilités calculées, pas devinées.</p>
+  </header>
+
+  <nav class="league-tabs" id="leagueTabs" aria-label="Choix de la ligue">
+  </nav>
+
+  <main id="main">
+    <div class="status-line" id="statusLine">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">Connexion au serveur…</span>
+    </div>
+
+    <section id="matchList" class="match-list" aria-live="polite">
+    </section>
+
+    <div class="empty-state hidden" id="emptyState">
+      <p class="empty-title">Aucun match aujourd'hui</p>
+      <p class="empty-body">Reviens à la prochaine journée de championnat.</p>
+    </div>
+  </main>
+
+  <footer class="footnote">
+    <p>Estimations statistiques (forme + historique) — à titre indicatif uniquement.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
