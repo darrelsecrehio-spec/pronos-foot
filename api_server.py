@@ -1,4 +1,4 @@
-"
+"""
 API de prédictions de matchs
 ==============================
 Petit serveur Flask qui expose predicteur_matchs.py en HTTP/JSON.
