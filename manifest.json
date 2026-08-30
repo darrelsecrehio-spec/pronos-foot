@@ -1,0 +1,10 @@
+{
+  "name": "PronosFoot",
+  "short_name": "PronosFoot",
+  "description": "Prédictions de matchs de football basées sur les statistiques",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B1F17",
+  "theme_color": "#0B1F17",
+  "orientation": "portrait"
+}
